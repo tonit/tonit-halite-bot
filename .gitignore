@@ -1,6 +1,8 @@
-/target
-/bin
+/target/
+/bin/
 /*.class
 /halite
 *.hlt
 /.gradle/
+*.log
+/build/
