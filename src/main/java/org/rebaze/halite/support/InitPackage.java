@@ -1,4 +1,4 @@
-package org.rebaze.halite;
+package org.rebaze.halite.support;
 
 public class InitPackage {
     public int myID;

@@ -1,11 +1,6 @@
-package org.rebaze.halite;
+package org.rebaze.halite.support;
 
-import java.net.*;
-import java.io.*;
 import java.util.ArrayList;
-import java.util.Scanner;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
 
 public class Networking {
     public static final int SIZE_OF_INTEGER_PREFIX = 4;
@@ -101,7 +96,7 @@ public class Networking {
         }
     }
 
-    static InitPackage getInit() {
+    public static InitPackage getInit() {
         InitPackage initPackage = new InitPackage();
         initPackage.myID = (int)Integer.parseInt(getString());
         deserializeGameMapSize(getString());
@@ -111,15 +106,15 @@ public class Networking {
         return initPackage;
     }
 
-    static void sendInit(String name) {
+    public static void sendInit( String name ) {
         sendString(name);
     }
 
-    static GameMap getFrame() {
+    public static GameMap getFrame() {
         return deserializeGameMap(getString());
     }
 
-    static void sendFrame(ArrayList<Move> moves) {
+    public static void sendFrame( ArrayList<Move> moves ) {
         sendString(serializeMoveList(moves));
     }
 

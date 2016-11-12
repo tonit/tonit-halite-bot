@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/toni-halite.iml" filepath="$PROJECT_DIR$/.idea/modules/toni-halite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/toni-halite_main.iml" filepath="$PROJECT_DIR$/.idea/modules/toni-halite_main.iml" group="toni-halite" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/toni-halite_test.iml" filepath="$PROJECT_DIR$/.idea/modules/toni-halite_test.iml" group="toni-halite" />
+    </modules>
+  </component>
+</project>

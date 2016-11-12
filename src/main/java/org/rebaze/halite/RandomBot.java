@@ -1,5 +1,7 @@
 package org.rebaze.halite;
 
+import org.rebaze.halite.support.*;
+
 import java.util.ArrayList;
 
 public class RandomBot {

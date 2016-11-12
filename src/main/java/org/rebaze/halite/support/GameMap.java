@@ -1,4 +1,4 @@
-package org.rebaze.halite;
+package org.rebaze.halite.support;
 
 import java.util.ArrayList;
 public class GameMap{
@@ -55,26 +55,28 @@ public class GameMap{
     }
 
     public Location getLocation(Location loc, Direction dir) {
-        Location l = new Location(loc);
+        int x = loc.x;
+        int y = loc.y;
+
         if(dir != Direction.STILL) {
             if(dir == Direction.NORTH) {
-                if(l.y == 0) l.y = height - 1;
-                else l.y--;
+                if(y == 0) y = height - 1;
+                else y--;
             }
             else if(dir == Direction.EAST) {
-                if(l.x == width - 1) l.x = 0;
-                else l.x++;
+                if(x == width - 1) x = 0;
+                else x++;
             }
             else if(dir == Direction.SOUTH) {
-                if(l.y == height - 1) l.y = 0;
-                else l.y++;
+                if(y == height - 1) y = 0;
+                else y++;
             }
             else if(dir == Direction.WEST) {
-                if(l.x == 0) l.x = width - 1;
-                else l.x--;
+                if(x == 0) x = width - 1;
+                else x--;
             }
         }
-        return l;
+        return new Location(x,y);
     }
 
     public Site getSite(Location loc, Direction dir) {
